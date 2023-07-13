@@ -93,8 +93,8 @@ pub fn shor(num: u32, t: u32) {
 
         while used.contains(&a) {
             let r = sim::utils::gcd(a, num);
-            if r != 1 {
-                println!("p={}, q={} [!]", r, a);
+            if (r != 1) && ((num % a) == 0) {
+                println!("p={}, q={} [!]", num / a, a);
                 return;
             }
             a = dist.sample(&mut rng);
@@ -128,4 +128,3 @@ pub fn shor(num: u32, t: u32) {
         println!();
     }
 }
-
