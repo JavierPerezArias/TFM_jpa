@@ -30,5 +30,5 @@ Cada iteración del algoritmo imprimirá por linea de commandos los siguientes v
   2. Estado del registro (número complejo).
   3. Probabilidad del registro (entre 0 y 1).
   4. Posibles resultados derivados de la subrutina cuántica.
-  5. **Opcional**: `[~]`.
-  6. **Opcional**: `p=<factor 1>, q=<factor 2> [!]`.
+  5. **Opcional**: `[~]`: Descarte de una solución trivial 1 x `N`.
+  6. **Opcional**: `p=<factor 1>, q=<factor 2> [!]`: Factores válidos para el `N` proporcionado.
